@@ -16,7 +16,6 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border: 2px solid green;
 }
 
 main section {
