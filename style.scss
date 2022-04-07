@@ -1,0 +1,168 @@
+// @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100&family=Lexend+Deca:wght@100&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+$sedansColor:hsl(31, 77%, 52%);
+$suvsColor: hsl(184, 100%, 22%);
+$luxuryColor: hsl(179, 100%, 13%);
+$colorFont: white;
+
+@mixin buttonConf() {
+    border-radius: 20px;
+    border: none;
+    width: 98px;
+    height: 28px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+@mixin fontLexend {
+    font-family: 'Lexend Deca', serif;
+}
+
+@mixin fontBigS {
+    font-family: 'Big Shoulders Display', serif;
+}
+
+@mixin flexCenter {
+    display: flex;
+    // flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+// conteudo
+
+main {
+    @include flexCenter();
+    height: 100vh;
+    border: 2px solid green;
+
+
+    section {
+        height: 380px;
+        width: 230px;
+        color: $colorFont;
+        // border: 1px solid red;
+
+        img {
+            width: 30%;
+        }
+
+        h1 {
+            @include fontBigS();
+            text-transform: uppercase;
+            font-size: 40px;
+            letter-spacing: 2px;
+            // padding: 10px 0px;
+        }
+
+        p,
+        button {
+            @include fontLexend()
+        }
+
+        p {
+            font-size: smaller;
+            font-weight: 500;
+            line-height: 20px;
+        }
+
+        button {
+            @include buttonConf();
+            width: 105px;
+            height: 35px;
+        }
+    }
+
+    .sedans {
+        background-color: $sedansColor;
+        border-radius: 5px 0px 0px 5px;
+
+        button {
+            &:hover {
+                background-color: $sedansColor;
+                color: white;
+                border: 2px solid white;
+                transition: 1s;
+            }
+        }
+
+
+    }
+
+    .suvs {
+        background-color: $suvsColor;
+
+        button {
+            &:hover {
+                background-color: $suvsColor;
+                color: white;
+                border: 2px solid white;
+                transition: 1s;
+            }
+        }
+
+        // &:hover {
+        //     animation: suvsAnimation 3s 1;
+        // }
+
+    }
+
+    // @keyframes suvsAnimation {
+    //     0% {
+    //         width: 260px;
+    //         height: 380px;
+    //     }
+
+    //     50% {
+    //         width: 300px;
+    //         height: 420px;
+    //     }
+
+    //     100% {
+    //         width: 260px;
+    //         height: 380px;
+    //     }
+    // }
+
+    .luxury {
+        background-color: $luxuryColor;
+        border-radius: 0px 5px 5px 0px;
+
+        button {
+            &:hover {
+                background-color: $luxuryColor;
+                color: white;
+                border: 2px solid white;
+                transition: 1s;
+            }
+        }
+    }
+
+    .conteudo {
+        @include flexCenter();
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        height: 100%;
+        padding: 30px;
+        // border: 1px solid black;
+
+        .conteudo2 {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+            width: 180px;
+            height: 70%;
+            // border: 1px solid blue;
+        }
+    }
+}

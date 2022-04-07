@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100&family=Lexend+Deca:wght@100&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  border: 2px solid green;
+}
+
+main section {
+  height: 380px;
+  width: 230px;
+  color: white;
+}
+
+main section img {
+  width: 30%;
+}
+
+main section h1 {
+  font-family: 'Big Shoulders Display', serif;
+  text-transform: uppercase;
+  font-size: 40px;
+  letter-spacing: 2px;
+}
+
+main section p,
+main section button {
+  font-family: 'Lexend Deca', serif;
+}
+
+main section p {
+  font-size: smaller;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+main section button {
+  border-radius: 20px;
+  border: none;
+  width: 98px;
+  height: 28px;
+  font-weight: 700;
+  cursor: pointer;
+  width: 105px;
+  height: 35px;
+}
+
+main .sedans {
+  background-color: #e38826;
+  border-radius: 5px 0px 0px 5px;
+}
+
+main .sedans button:hover {
+  background-color: #e38826;
+  color: white;
+  border: 2px solid white;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+main .suvs {
+  background-color: #006970;
+}
+
+main .suvs button:hover {
+  background-color: #006970;
+  color: white;
+  border: 2px solid white;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+main .luxury {
+  background-color: #004241;
+  border-radius: 0px 5px 5px 0px;
+}
+
+main .luxury button:hover {
+  background-color: #004241;
+  color: white;
+  border: 2px solid white;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+main .conteudo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+  padding: 30px;
+}
+
+main .conteudo .conteudo2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 180px;
+  height: 70%;
+}
+/*# sourceMappingURL=style.css.map */
