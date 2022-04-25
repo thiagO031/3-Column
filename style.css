@@ -149,7 +149,7 @@ main .conteudo .conteudo2 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    height: 190vh;
+    height: 1200px;
   }
   main .sedans {
     border-radius: 5px 5px 0px 0px;
