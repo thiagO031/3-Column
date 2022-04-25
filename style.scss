@@ -41,7 +41,7 @@ $colorFont: white;
 
 main {
     @include flexCenter();
-    // height: 100vh;
+    height: 100vh;
     // border: 2px solid green;
 
 
@@ -89,8 +89,8 @@ main {
             &:hover {
                 background-color: $sedansColor;
                 color: white;
-                border: 2px solid white;
-                transition: 1s;
+                border: 1px solid white;
+                transition: 0.7s;
             }
         }
 
@@ -104,8 +104,8 @@ main {
             &:hover {
                 background-color: $suvsColor;
                 color: white;
-                border: 2px solid white;
-                transition: 1s;
+                border: 1px solid white;
+                transition: 0.7s;
             }
         }
 
@@ -140,8 +140,8 @@ main {
             &:hover {
                 background-color: $luxuryColor;
                 color: white;
-                border: 2px solid white;
-                transition: 1s;
+                border: 1px solid white;
+                transition: 0.7s;
             }
         }
     }
@@ -168,12 +168,22 @@ main {
     }
 }
 
-@media(max-width: 375px){
+@media(max-width: 500px){
     main{
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+
+        height: 190vh;
+
+        .sedans{
+            border-radius: 5px 5px 0px 0px;
+        }
+
+        .luxury{
+            border-radius: 0px 0px 5px 5px;
+        }
     }
 
     
