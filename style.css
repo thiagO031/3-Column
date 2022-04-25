@@ -134,7 +134,7 @@ main .conteudo .conteudo2 {
   height: 70%;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 450px) {
   main {
     display: -webkit-box;
     display: -ms-flexbox;
